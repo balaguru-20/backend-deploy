@@ -15,7 +15,7 @@ pipeline{
     }
      parameters{
         string(name: 'version', description: 'Enter the application version')
-        choice(name: 'deploy_to', choices: ['dev', 'qa', 'prod'], description: 'Pick something')
+        choice(name: 'deploy_to', defaultValue: 'dev' choices: ['dev', 'qa', 'prod'], description: 'Pick something')
     }
     stages{
         stage('Setup Environment'){
