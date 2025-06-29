@@ -1,5 +1,5 @@
 configmap:
   db_host: expense-dev.cshk40imgrj8.us-east-1.rds.amazonaws.com
 deployment:
-  imageURL: 314146304089.dkr.ecr.us-east-1.amazonaws.com/expense/backend:latest  # take it from AWS ECR backend docker tag
+  imageURL: 314146304089.dkr.ecr.us-east-1.amazonaws.com/expense/backend  # take it from AWS ECR backend docker tag
   version: IMAGE_VERSION
